@@ -1,0 +1,106 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - list [ref=e3]:
+      - listitem [ref=e4]:
+        - link "home" [ref=e5] [cursor=pointer]:
+          - /url: index.html
+          - img "home" [ref=e6]
+    - list [ref=e7]:
+      - listitem [ref=e8] [cursor=pointer]:
+        - img "more" [ref=e9]
+      - listitem [ref=e14]:
+        - list [ref=e15]:
+          - listitem [ref=e16]:
+            - link "blog" [ref=e17] [cursor=pointer]:
+              - /url: blog/
+              - img "blog" [ref=e18]
+          - listitem [ref=e19]:
+            - link "artifacts" [ref=e20] [cursor=pointer]:
+              - /url: writing/
+              - img "artifacts" [ref=e21]
+          - listitem [ref=e22]:
+            - link "list" [ref=e23] [cursor=pointer]:
+              - /url: list/
+              - img "list" [ref=e24]
+          - listitem [ref=e25]:
+            - link "self" [ref=e26] [cursor=pointer]:
+              - /url: about/
+              - img "self" [ref=e27]
+          - listitem [ref=e28]:
+            - link "time" [ref=e29] [cursor=pointer]:
+              - /url: time/
+              - img "time" [ref=e30]
+          - listitem [ref=e31]:
+            - link "archive" [ref=e32] [cursor=pointer]:
+              - /url: archive/
+              - img "archive" [ref=e33]
+  - main [ref=e34]:
+    - heading "l[eo]n zh[ou] [dot] org (beta)" [level=1] [ref=e36]
+    - link "home" [ref=e37] [cursor=pointer]:
+      - /url: index.html
+    - generic [ref=e38]:
+      - paragraph [ref=e39]: hello!!!
+      - paragraph [ref=e40]:
+        - text: my name is
+        - link "Leon zhou" [ref=e41] [cursor=pointer]:
+          - /url: about/
+        - text: . this is a collection of my
+        - link "writing" [ref=e42] [cursor=pointer]:
+          - /url: blog/
+        - text: and ideas fixed in words.
+      - paragraph [ref=e43]:
+        - text: do you want to see
+        - link "the world in my head" [ref=e44] [cursor=pointer]:
+          - /url: blog/otherworldly/
+        - text: "?"
+      - paragraph [ref=e45]:
+        - text: or some of
+        - link "my favourite things" [ref=e46] [cursor=pointer]:
+          - /url: list/
+        - text: "?"
+      - paragraph [ref=e47]:
+        - text: if you're curious about
+        - link "time" [ref=e48] [cursor=pointer]:
+          - /url: time/
+        - text: ", explore the"
+        - link "sidebar" [ref=e49] [cursor=pointer]:
+          - /url: "#"
+        - text: "!"
+      - paragraph [ref=e50]:
+        - text: and try my
+        - link "blog" [ref=e51] [cursor=pointer]:
+          - /url: blog/
+        - text: (i practice writing here).
+      - paragraph [ref=e52]:
+        - text: like things just so?
+        - link "customize your experience" [ref=e53] [cursor=pointer]:
+          - /url: "#"
+        - text: .
+      - paragraph [ref=e54]: enjoy your stay!
+  - contentinfo [ref=e55]:
+    - generic [ref=e56]:
+      - link "Chess.com" [ref=e57] [cursor=pointer]:
+        - /url: https://www.chess.com/member/leonzhou7
+        - img "Chess.com" [ref=e58]
+      - link "Email" [ref=e59] [cursor=pointer]:
+        - /url: mailto:crowded@gmail.com
+        - img "Email" [ref=e60]
+      - link "Instagram" [ref=e61] [cursor=pointer]:
+        - /url: https://www.instagram.com/lnzh07/
+        - img "Instagram" [ref=e62]
+      - link "LinkedIn" [ref=e63] [cursor=pointer]:
+        - /url: https://www.linkedin.com/in/leon-zhou-66b7182b0/
+        - img "LinkedIn" [ref=e64]
+      - link "XD" [ref=e65] [cursor=pointer]:
+        - /url: https://getxd.app/
+        - img "XD" [ref=e66]
+      - link "Yelp" [ref=e67] [cursor=pointer]:
+        - /url: https://www.yelp.com/user_details?userid=VF0qY_FihoZUKrObEiy__g
+        - img "Yelp" [ref=e68]
+  - img
+  - button "Appearance settings" [ref=e69] [cursor=pointer]:
+    - generic:
+      - img
+  - button "Play the one-stroke puzzle" [ref=e70] [cursor=pointer]:
+    - generic:
+      - img

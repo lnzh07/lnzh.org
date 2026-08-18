@@ -1,0 +1,24 @@
+- generic [ref=e2]:
+  - heading "Index of /cloudwatching/" [level=1] [ref=e3]
+  - table [ref=e5]:
+    - rowgroup [ref=e6]:
+      - row "Name Last Modified Size" [ref=e7]:
+        - columnheader "Name" [ref=e8]:
+          - link "Name" [ref=e9] [cursor=pointer]:
+            - /url: "?ND"
+        - columnheader "Last Modified" [ref=e10]:
+          - link "Last Modified" [ref=e11] [cursor=pointer]:
+            - /url: "?MA"
+        - columnheader "Size" [ref=e12]:
+          - link "Size" [ref=e13] [cursor=pointer]:
+            - /url: "?SA"
+    - rowgroup [ref=e14]:
+      - row "UpParent Directory" [ref=e15]:
+        - cell "UpParent Directory" [ref=e16]:
+          - link "UpParent Directory" [ref=e17] [cursor=pointer]:
+            - /url: /
+            - img "Up" [ref=e18]
+            - text: Parent Directory
+        - cell [ref=e19]
+        - cell [ref=e20]
+  - generic [ref=e21]: Proudly Served by LiteSpeed Web Server at whenwe.love Port 443

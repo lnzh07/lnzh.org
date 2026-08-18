@@ -1,0 +1,167 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - heading "time" [level=1] [ref=e3]
+    - link "← back home" [ref=e4] [cursor=pointer]:
+      - /url: ../
+    - paragraph [ref=e5]: the early part
+    - generic [ref=e7]:
+      - article:
+        - generic: time
+      - group "≈2010 — a first place" [ref=e8]:
+        - generic:
+          - generic: ≈2010
+          - generic: a first place
+          - generic: somewhere it began.
+      - group "≈2013 — another town" [ref=e10]:
+        - generic [ref=e14]: "to be hung: placeholder: a town"
+        - generic:
+          - generic: ≈2013
+          - generic: another town
+          - generic: a stand-in for a photograph.
+      - group "≈2016 — a quiet year" [ref=e15]:
+        - generic [ref=e16]: a line that will mean something later.
+        - generic:
+          - generic: ≈2016
+          - generic: a quiet year
+          - generic: a line that will mean something later.
+      - group "2018 — a new school":
+        - generic:
+          - generic:
+            - generic: "to be hung: placeholder: an arrival"
+        - generic:
+          - generic: "2018"
+          - generic: a new school
+          - generic: placeholder for an arrival.
+      - group "2019 — a shelf of books":
+        - generic:
+          - generic: a shelf of books
+          - generic: titles to be filled in.
+        - generic:
+          - generic: "2019"
+      - group "2019 — something fermenting" [ref=e17]:
+        - generic:
+          - generic: "2019"
+          - generic: something fermenting
+          - generic: a warm placeholder.
+      - group "2020 — a game elsewhere":
+        - generic:
+          - generic: a game elsewhere
+          - generic: one move, to be decided.
+        - generic:
+          - generic: "2020"
+      - group "2021 — a bright one":
+        - generic:
+          - generic:
+            - generic: "to be hung: placeholder: a bright page"
+        - generic:
+          - generic: "2021"
+          - generic: a bright one
+          - generic: placeholder, but the important kind.
+      - group "2022 — a tender one":
+        - generic: the softest placeholder.
+        - generic:
+          - generic: "2022"
+          - generic: a tender one
+          - generic: the softest placeholder.
+      - group "2022 — a crooked one":
+        - generic:
+          - generic:
+            - generic: "to be hung: placeholder: hang me straight"
+        - generic:
+          - generic: "2022"
+          - generic: a crooked one
+          - generic: it hangs wrong on purpose.
+      - group "2023 — some photographs":
+        - generic:
+          - generic:
+            - generic: "to be hung: placeholder: a photograph"
+        - generic:
+          - generic: "2023"
+          - generic: some photographs
+          - generic: stand-ins, for now.
+      - group "2023 — a celebration":
+        - generic:
+          - generic: "2023"
+          - generic: a celebration
+          - generic: confetti to be drawn.
+      - group "2024 — a little window":
+        - generic:
+          - generic:
+            - generic:
+              - generic: untitled
+            - generic: https://…
+            - generic:
+              - generic: "to be hung: placeholder: a screenshot"
+        - generic:
+          - generic: "2024"
+          - generic: a little window
+          - generic: a site lives here eventually.
+      - group "2024 — a project":
+        - generic:
+          - generic:
+            - generic: "to be hung: placeholder: something made"
+        - generic:
+          - generic: "2024"
+          - generic: a project
+          - generic: filler for something made.
+      - group "2025 — a writing thing":
+        - generic:
+          - generic: a writing thing
+          - generic: one sentence at a time.
+        - generic:
+          - generic: "2025"
+      - group "2025 — a small machine":
+        - generic:
+          - generic: a small machine
+          - generic: it fetches things.
+        - generic:
+          - generic: "2025"
+      - group "2025 — the one-stroke puzzle":
+        - generic:
+          - generic:
+            - generic: "to be hung: placeholder: a constellation"
+        - generic:
+          - generic: "2025"
+          - generic: the one-stroke puzzle
+          - generic: one stroke unlocks the cosmos.
+          - button "play →"
+      - group "2026 — the empty frame":
+        - generic:
+          - generic:
+            - generic: "to be hung: placeholder: whatever happens next"
+        - generic:
+          - generic: "2026"
+          - generic: the empty frame
+          - generic: reserved.
+      - group "someday — a first path":
+        - generic [ref=e19]:
+          - generic [ref=e20]: someday
+          - generic [ref=e21]: a first path
+          - generic [ref=e22]: still forming.
+      - group "someday — a second path":
+        - generic [ref=e23]:
+          - generic [ref=e24]: someday
+          - generic [ref=e25]: a second path
+          - generic [ref=e26]: being pulled.
+      - group "someday — a third path":
+        - generic [ref=e27]:
+          - generic [ref=e28]: someday
+          - generic [ref=e29]: a third path
+          - generic [ref=e30]: under construction.
+      - group "someday — (and a footnote)":
+        - generic [ref=e31]:
+          - generic [ref=e32]: someday
+          - generic [ref=e33]: (and a footnote)
+          - generic [ref=e34]: to be written.
+    - paragraph [ref=e36]: scroll to drift deeper · tab to touch each one
+    - generic [ref=e38] [cursor=pointer]:
+      - paragraph [ref=e39]: time
+      - paragraph [ref=e40]: everything that was, everything that will be
+      - paragraph [ref=e41]: scroll to explore
+    - button "Turn the hum off" [pressed] [ref=e42] [cursor=pointer]: ● hum
+  - img
+  - button "Appearance settings" [ref=e43] [cursor=pointer]:
+    - generic: ⚙
+  - button "Play the one-stroke puzzle" [ref=e44] [cursor=pointer]:
+    - generic:
+      - img

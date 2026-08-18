@@ -1,0 +1,177 @@
+- generic [active] [ref=e1]:
+  - list:
+    - listitem:
+      - link "chia" [ref=e2] [cursor=pointer]:
+        - /url: https://chi.itch.io
+        - img [ref=e3]
+        - generic [ref=e5]: chia
+    - listitem:
+      - link "Follow" [ref=e6] [cursor=pointer]:
+        - /url: https://itch.io/login?return_to=https%3A%2F%2Fchi.itch.io%2Fthe-sound-of-love&intent=follow_user
+        - img [ref=e7]
+        - generic [ref=e10]: Follow
+    - listitem:
+      - link "Collection" [ref=e11] [cursor=pointer]:
+        - /url: https://itch.io/login?return_to=https%3A%2F%2Fchi.itch.io%2Fthe-sound-of-love&intent=add_to_collection
+        - img [ref=e12]
+        - generic [ref=e13]: Collection
+    - listitem:
+      - link "Comments" [ref=e14] [cursor=pointer]:
+        - /url: https://chi.itch.io/the-sound-of-love#comments
+        - img [ref=e15]
+        - text: Comments
+    - listitem:
+      - link "Related" [ref=e17] [cursor=pointer]:
+        - /url: https://itch.io/games-like/3073778/the-sound-of-love
+        - img [ref=e18]
+        - generic [ref=e20]: Related
+  - generic [ref=e22]:
+    - generic [ref=e23]:
+      - button "Run sound of love" [ref=e27] [cursor=pointer]:
+        - img [ref=e28]
+        - text: Run sound of love
+      - link "Support This Sound Of Love" [ref=e32] [cursor=pointer]:
+        - /url: https://chi.itch.io/the-sound-of-love/donate
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - generic [ref=e35]:
+            - paragraph [ref=e36]:
+              - strong [ref=e37]: "Instructions:"
+              - text: Click to change the song; hit 'Color' to change the color palette – the songs might take a bit to load. Best with YouTube AdBlocker.
+              - strong [ref=e38]:
+                - text: Also playable on
+                - link "https://thesoundof.love" [ref=e39] [cursor=pointer]:
+                  - /url: https://thesoundof.love
+                - text: .
+            - paragraph [ref=e40]:
+              - emphasis [ref=e41]: I heard of love in the YouTube comments section.
+            - paragraph [ref=e42]: "I've been compiling comments I find under love songs for the past four years. Centering stories, comments, and remarks on love, loss, longing, and lightness left under the YouTube comments section (subverting how the platform is usually designed). Intimacy is always found in unexpected places: it's human nature. What draws us to remember... and comment them?"
+            - paragraph [ref=e43]:
+              - emphasis [ref=e44]: All manually compiled comments by me.
+              - link "Listen to the Spotify playlist" [ref=e45] [cursor=pointer]:
+                - /url: https://open.spotify.com/playlist/4QS7k0XYYb3tjl0xuGHDBK?si=8621092b24f14e6e&nd=1&dlsi=bd6d28c948ad4df3
+          - link "More information" [ref=e48] [cursor=pointer]:
+            - /url: javascript:void(0)
+            - text: More information
+            - img [ref=e49]
+          - generic [ref=e51]:
+            - heading "Comments" [level=2] [ref=e52]
+            - paragraph [ref=e53]:
+              - link "Log in with itch.io" [ref=e54] [cursor=pointer]:
+                - /url: https://itch.io/login?return_to=https%3A%2F%2Fchi.itch.io%2Fthe-sound-of-love
+              - text: to leave a comment.
+            - generic [ref=e56]:
+              - generic [ref=e58]:
+                - generic [ref=e59]:
+                  - link "Vote up" [ref=e60] [cursor=pointer]:
+                    - /url: https://itch.io/login?return_to=https%3A%2F%2Fchi.itch.io%2Fthe-sound-of-love&intent=community
+                    - img [ref=e61]
+                  - link "Vote down" [ref=e63] [cursor=pointer]:
+                    - /url: https://itch.io/login?return_to=https%3A%2F%2Fchi.itch.io%2Fthe-sound-of-love&intent=community
+                    - img [ref=e64]
+                - link [ref=e66] [cursor=pointer]:
+                  - /url: https://itch.io/profile/latenightdrive
+                - generic [ref=e68]:
+                  - link "latenightdrive" [ref=e70] [cursor=pointer]:
+                    - /url: https://itch.io/profile/latenightdrive
+                  - generic "2025-04-16 17:29:44" [ref=e71]:
+                    - link "1 year ago" [ref=e72] [cursor=pointer]:
+                      - /url: https://itch.io/post/12648574
+                - generic [ref=e73]:
+                  - paragraph [ref=e75]: This is such a beautiful idea! I love it so much and found some new favorites.
+                  - link "Reply" [ref=e77] [cursor=pointer]:
+                    - /url: https://itch.io/login?return_to=https%3A%2F%2Fchi.itch.io%2Fthe-sound-of-love&intent=community
+              - generic [ref=e79]:
+                - generic [ref=e80]:
+                  - link "Vote up" [ref=e81] [cursor=pointer]:
+                    - /url: https://itch.io/login?return_to=https%3A%2F%2Fchi.itch.io%2Fthe-sound-of-love&intent=community
+                    - img [ref=e82]
+                  - link "Vote down" [ref=e84] [cursor=pointer]:
+                    - /url: https://itch.io/login?return_to=https%3A%2F%2Fchi.itch.io%2Fthe-sound-of-love&intent=community
+                    - img [ref=e85]
+                - link [ref=e87] [cursor=pointer]:
+                  - /url: https://itch.io/profile/cervat
+                - generic [ref=e89]:
+                  - link "Cervat" [ref=e91] [cursor=pointer]:
+                    - /url: https://itch.io/profile/cervat
+                  - generic "2025-04-05 10:06:07" [ref=e92]:
+                    - link "1 year ago" [ref=e93] [cursor=pointer]:
+                      - /url: https://itch.io/post/12565919
+                - generic [ref=e94]:
+                  - paragraph [ref=e96]: I love this project, I enjoy finding that pure love and humanity in the comments T_T
+                  - link "Reply" [ref=e98] [cursor=pointer]:
+                    - /url: https://itch.io/login?return_to=https%3A%2F%2Fchi.itch.io%2Fthe-sound-of-love&intent=community
+              - generic [ref=e100]:
+                - generic [ref=e101]:
+                  - link "Vote up" [ref=e102] [cursor=pointer]:
+                    - /url: https://itch.io/login?return_to=https%3A%2F%2Fchi.itch.io%2Fthe-sound-of-love&intent=community
+                    - img [ref=e103]
+                  - link "Vote down" [ref=e105] [cursor=pointer]:
+                    - /url: https://itch.io/login?return_to=https%3A%2F%2Fchi.itch.io%2Fthe-sound-of-love&intent=community
+                    - img [ref=e106]
+                - link [ref=e108] [cursor=pointer]:
+                  - /url: https://itch.io/profile/zeenzeen
+                - generic [ref=e110]:
+                  - link "zeenzeen" [ref=e112] [cursor=pointer]:
+                    - /url: https://itch.io/profile/zeenzeen
+                  - generic "2024-12-08 23:39:25" [ref=e113]:
+                    - link "1 year ago" [ref=e114] [cursor=pointer]:
+                      - /url: https://itch.io/post/11547613
+                - generic [ref=e115]:
+                  - paragraph [ref=e117]: This came for me when I need it the most. I'm sobbing, thank you so much for the amazing project. <3
+                  - link "Reply" [ref=e119] [cursor=pointer]:
+                    - /url: https://itch.io/login?return_to=https%3A%2F%2Fchi.itch.io%2Fthe-sound-of-love&intent=community
+              - generic [ref=e121]:
+                - generic [ref=e122]:
+                  - link "Vote up" [ref=e123] [cursor=pointer]:
+                    - /url: https://itch.io/login?return_to=https%3A%2F%2Fchi.itch.io%2Fthe-sound-of-love&intent=community
+                    - img [ref=e124]
+                  - link "Vote down" [ref=e126] [cursor=pointer]:
+                    - /url: https://itch.io/login?return_to=https%3A%2F%2Fchi.itch.io%2Fthe-sound-of-love&intent=community
+                    - img [ref=e127]
+                - link [ref=e129] [cursor=pointer]:
+                  - /url: https://itch.io/profile/wyrmrave
+                - generic [ref=e131]:
+                  - link "wyrm.rave" [ref=e133] [cursor=pointer]:
+                    - /url: https://itch.io/profile/wyrmrave
+                  - generic "2024-10-30 15:04:18" [ref=e134]:
+                    - link "1 year ago" [ref=e135] [cursor=pointer]:
+                      - /url: https://itch.io/post/11259009
+                - generic [ref=e136]:
+                  - paragraph [ref=e138]: Incredible. Came to me at the right time, thank you for sharing.
+                  - link "Reply" [ref=e140] [cursor=pointer]:
+                    - /url: https://itch.io/login?return_to=https%3A%2F%2Fchi.itch.io%2Fthe-sound-of-love&intent=community
+        - generic [ref=e142]:
+          - link:
+            - /url: https://img.itch.zone/aW1hZ2UvMzA3Mzc3OC8xODM4MjkxMi5wbmc=/original/9XPvva.png
+            - img [ref=e143] [cursor=pointer]
+          - link:
+            - /url: https://img.itch.zone/aW1hZ2UvMzA3Mzc3OC8xODM4MjkxNC5wbmc=/original/G9jW%2B0.png
+            - img [ref=e144] [cursor=pointer]
+          - link:
+            - /url: https://img.itch.zone/aW1hZ2UvMzA3Mzc3OC8xODM4MjkxMy5wbmc=/original/AriTxf.png
+            - img [ref=e145] [cursor=pointer]
+    - generic [ref=e146]:
+      - link [ref=e147] [cursor=pointer]:
+        - /url: https://itch.io/
+        - img [ref=e148]
+      - link "itch.io" [ref=e150] [cursor=pointer]:
+        - /url: https://itch.io/
+      - text: ·
+      - link "View all by chia" [ref=e151] [cursor=pointer]:
+        - /url: https://chi.itch.io
+      - text: ·
+      - link "Report" [ref=e152] [cursor=pointer]:
+        - /url: javascript:void(0);
+      - text: ·
+      - link "Embed" [ref=e153] [cursor=pointer]:
+        - /url: javascript:void(0);
+      - generic [ref=e154]:
+        - link "Games" [ref=e155] [cursor=pointer]:
+          - /url: https://itch.io/games
+        - text: ›
+        - link "Interactive Fiction" [ref=e156] [cursor=pointer]:
+          - /url: https://itch.io/games/tag-interactive-fiction
+        - text: ›
+        - link "Free" [ref=e157] [cursor=pointer]:
+          - /url: https://itch.io/games/free

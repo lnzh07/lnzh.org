@@ -1,0 +1,185 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - link "About" [ref=e3] [cursor=pointer]:
+      - /url: "#title"
+    - link "Releases" [ref=e4] [cursor=pointer]:
+      - /url: "#whenwelove"
+    - link "Updates" [ref=e5] [cursor=pointer]:
+      - /url: "#updates"
+  - generic [ref=e7]:
+    - group [ref=e8] [cursor=pointer]:
+      - generic "Flower Picking" [ref=e9]
+      - text: ( )
+    - group [ref=e10] [cursor=pointer]:
+      - generic "Moving" [ref=e11]
+      - text: ( )
+    - group [ref=e12] [cursor=pointer]:
+      - generic "Too" [ref=e13]
+      - text: ( )
+    - group [ref=e14] [cursor=pointer]:
+      - generic "Cloudwatching Stargazing" [ref=e15]:
+        - text: Cloudwatching
+        - text: Stargazing
+      - text: ( )
+    - group [ref=e16] [cursor=pointer]:
+      - generic "Games" [ref=e17]
+      - text: ( )
+    - group [ref=e18] [cursor=pointer]:
+      - generic "Forms" [ref=e19]
+      - text: ( )
+    - group [ref=e20] [cursor=pointer]:
+      - generic "Bedrooms" [ref=e21]
+      - text: ( )
+    - group [ref=e22] [cursor=pointer]:
+      - generic "Comments" [ref=e23]
+      - text: ( )
+    - group [ref=e24] [cursor=pointer]:
+      - generic "Dreaming" [ref=e25]
+      - text: ( )
+  - generic [ref=e26]:
+    - heading "When We Love" [level=1] [ref=e27]
+    - paragraph [ref=e28]:
+      - text: A series of net art interventions that move towards proximity, intimacy, and care on the internet.
+      - text: Made by
+      - link "Chia Amisola" [ref=e29] [cursor=pointer]:
+        - /url: https://everythingi.love
+        - emphasis [ref=e30]: Chia Amisola
+  - main [ref=e31]:
+    - generic [ref=e32]:
+      - link "whenwe.love/dreaming (preview) Dreaming on the desktop. Net Art WIP" [ref=e34] [cursor=pointer]:
+        - /url: https://everythingi.love/#world/dreaming/index.html
+        - text: whenwe.love/dreaming (preview)
+        - paragraph [ref=e35]: Dreaming on the desktop.
+        - generic [ref=e36]: Net Art
+        - generic [ref=e37]: WIP
+      - link "whenwe.love/flowerpicking A small hypertext offering to the living among the dead. Net Art August 2025" [ref=e39] [cursor=pointer]:
+        - /url: https://whenwe.love/flowerpicking
+        - text: whenwe.love/flowerpicking
+        - paragraph [ref=e40]: A small hypertext offering to the living among the dead.
+        - generic [ref=e41]: Net Art
+        - generic [ref=e42]: August 2025
+      - link "whenwe.love/moving Me & you, endlessly moving between each other. An opening and closing. A window into everything. Net Art 2023" [ref=e44] [cursor=pointer]:
+        - /url: https://whenwe.love/moving
+        - text: whenwe.love/moving
+        - paragraph [ref=e45]: Me & you, endlessly moving between each other. An opening and closing. A window into everything.
+        - generic [ref=e46]: Net Art
+        - generic [ref=e47]: "2023"
+      - link "ifyouknewmewouldyoulove.me/too/ I love it when you love me too. Net Art 2022" [ref=e49] [cursor=pointer]:
+        - /url: https://ifyouknewmewouldyoulove.me/too/
+        - text: ifyouknewmewouldyoulove.me/too/
+        - paragraph [ref=e50]: I love it when you love me too.
+        - generic [ref=e51]: Net Art
+        - generic [ref=e52]: "2022"
+      - link "whenwe.love/cloudwatching/ A naming at day / a wishing at night Net Art 2023" [ref=e54] [cursor=pointer]:
+        - /url: https://whenwe.love/cloudwatching/
+        - text: whenwe.love/cloudwatching/
+        - paragraph [ref=e55]: A naming at day / a wishing at night
+        - generic [ref=e56]: Net Art
+        - generic [ref=e57]: "2023"
+      - link:
+        - /url: https://whenwe.love/cloudwatching/
+      - generic [ref=e58]:
+        - link:
+          - /url: https://whenwe.love/cloudwatching/
+        - link "whenwe.love/games To the end of MMORPGs. Net Art 2023" [ref=e59] [cursor=pointer]:
+          - /url: https://gamechatshop.com
+          - text: whenwe.love/games
+          - paragraph [ref=e60]: To the end of MMORPGs.
+          - generic [ref=e61]: Net Art
+          - generic [ref=e62]: "2023"
+      - link "whenwe.love/forms A repetition, a making, and an unraveling of self through many fields. Net Art 2023" [ref=e64] [cursor=pointer]:
+        - /url: https://whenwe.love/forms/
+        - text: whenwe.love/forms
+        - paragraph [ref=e65]: A repetition, a making, and an unraveling of self through many fields.
+        - generic [ref=e66]: Net Art
+        - generic [ref=e67]: "2023"
+      - link "whenwe.love/bedrooms Everyone who reaches for the heavens seems to land in Las Piñas. A childhood memory, a making through language, the rest being memory. Net Art 2024" [ref=e69] [cursor=pointer]:
+        - /url: https://chi.itch.io/a-bedroom-in-las-pinas
+        - text: whenwe.love/bedrooms
+        - paragraph [ref=e70]: Everyone who reaches for the heavens seems to land in Las Piñas. A childhood memory, a making through language, the rest being memory.
+        - generic [ref=e71]: Net Art
+        - generic [ref=e72]: "2024"
+      - link "whenwe.love/comments The Sound of Love is a study of the love, loss, lust, and longing hidden underneath the YouTube comments section. Net Art 2022" [ref=e74] [cursor=pointer]:
+        - /url: https://thesoundof.love
+        - text: whenwe.love/comments
+        - paragraph [ref=e75]: The Sound of Love is a study of the love, loss, lust, and longing hidden underneath the YouTube comments section.
+        - generic [ref=e76]: Net Art
+        - generic [ref=e77]: "2022"
+    - heading "Dating Simulator ( In development )" [level=2] [ref=e78]:
+      - text: Dating Simulator
+      - emphasis [ref=e80]: ( In development )
+    - paragraph [ref=e81]: "WHEN WE LOVE is a hypertextual dating simulator where you date everything: people, birds, poems, historical events, ideas, and more. It is a social poem, a communal gathering, a new possibility."
+    - paragraph [ref=e82]: It is a continuous, persistent browser-based game that blurs love offline and online, exploring its countless forms. Inspired by hypertext, Neopets, early net art, roguelikes, Pacthesis, simulation games, Jason Rohrer's work, Homestuck, incrementals, etc. — it is a strange simulation of love, a game infinitely played & clicked through and lived in.
+    - paragraph [ref=e83]:
+      - emphasis [ref=e84]: Currently in development, starting 2025... stay tuned!
+    - heading "Interventions ( Ongoing )" [level=2] [ref=e85]:
+      - text: Interventions
+      - emphasis [ref=e87]: ( Ongoing )
+    - paragraph [ref=e88]:
+      - text: Art pieces, performances, and interventions both offline and online, multiplayer and singleplayer, with variable duration, space, and meaning. More than a simple 'game', WHEN WE LOVE is a series of interconnected experiences inviting love to intervene on your everyday life.
+      - text: Sometimes, you're
+      - link "moving (We Are Only Moving Towards Each Other)" [ref=e89] [cursor=pointer]:
+        - /url: https://whenwe.love/moving
+      - text: ","
+      - link "waking up in old beds (A Bedroom in Las Piñas)" [ref=e90] [cursor=pointer]:
+        - /url: https://whenwe.love/bedrooms
+      - text: ","
+      - link "digging through comment sections (The Sound of Love)" [ref=e91] [cursor=pointer]:
+        - /url: https://whenwe.love/comments
+      - text: ", or"
+      - link "answering papers (Concrete Form)" [ref=e92] [cursor=pointer]:
+        - /url: https://whenwe.love/forms
+      - text: .
+    - heading "About" [level=2] [ref=e93]
+    - paragraph [ref=e94]: "For over 3 years, I've been releasing small interventions about the possibility of love online. In ways, I've been working up the technical skills to make the main 'umbrella' game: When We Love, a massively multiplayer online loving game, a hypertext dating simulator...."
+    - paragraph [ref=e95]: I'm in love with continuous game worlds, simulations tended over decades, and places that I return to and live alongside. Love online might bend many mediums... Altogether, an experience, prompt, and realization about love on screens that extends beyond one screen.
+    - paragraph [ref=e96]:
+      - text: "Thank you: When We Love has been supported by"
+      - link "Rhizome's microgrent for net art" [ref=e97] [cursor=pointer]:
+        - /url: https://rhizome.org/editorial/2023/aug/02/announcing-2023-microgrant-awardees/
+      - text: ", presented at"
+      - link "Now Play This" [ref=e98] [cursor=pointer]:
+        - /url: https://nowplaythis.net/2023-festival/
+      - text: . I'm grateful.
+    - paragraph [ref=e99]:
+      - text: Do you care about websites that truly feel like worlds, infinite and emergent? What about websites that talk about love, or are simply peotic or experimental?
+      - text: I'd love to get some grant or residency time to put my heart into When We Love further; still, look for releases throughout the year.
+    - heading "Get updates on When We Love" [level=3] [ref=e100]
+    - generic [ref=e101]:
+      - iframe [ref=e102]:
+        - generic [ref=f4e2]:
+          - iframe
+          - generic [ref=f4e4]:
+            - generic [ref=f4e5]:
+              - link:
+                - /url: https://chia.substack.com/
+              - generic [ref=f4e10]:
+                - textbox "Type your email..." [ref=f4e13]
+                - button "Subscribe" [disabled] [ref=f4e14]
+              - generic [ref=f4e16]:
+                - text: By subscribing you agree to
+                - link "Substack's Terms of Use" [ref=f4e17] [cursor=pointer]:
+                  - /url: https://chia.substack.com/tos?utm_source=embed_publication
+                - text: ","
+                - link "our Privacy Policy" [ref=f4e18] [cursor=pointer]:
+                  - /url: https://chia.substack.com/privacy?utm_source=embed_publication
+                - text: and
+                - link "our Information collection notice" [ref=f4e19] [cursor=pointer]:
+                  - /url: https://substack.com/ccpa?utm_source=embed_publication#personal-data-collected
+            - link "Substack":
+              - /url: https://substack.com/?utm_source=embed&utm_content=chia
+              - img "Substack" [ref=f4e20] [cursor=pointer]
+          - region "Notifications (F8)":
+            - list
+      - link "chi.itch.io" [ref=e103] [cursor=pointer]:
+        - /url: https://chi.itch.io
+      - link "studio @everythingi.love" [ref=e104] [cursor=pointer]:
+        - /url: "#"
+    - heading "Changelog" [level=3] [ref=e105]
+    - list [ref=e106]:
+      - listitem [ref=e107]: "2025-08-05: New homepage!"
+      - listitem [ref=e108]:
+        - text: "2025-08-01:"
+        - link "whenwe.love/flowerpicking" [ref=e109] [cursor=pointer]:
+          - /url: https://whenwe.love/flowerpicking
+        - text: releases with Indiepocalypse

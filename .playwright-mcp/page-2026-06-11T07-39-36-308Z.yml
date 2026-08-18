@@ -1,0 +1,16 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e8]:
+    - generic [ref=e10]:
+      - generic [ref=e11]:
+        - img [ref=e12]
+        - paragraph [ref=e13]:
+          - strong [ref=e14]: PFM Leisure Enhancer Version 3.0.2
+        - paragraph [ref=e15]:
+          - text: Marty Bell, Lewis King, Bas Strien, Alyssa Ordillano, Niek Dekker, Emily Nabnian, Jamiel Rahi, Aziz Firat
+          - generic [ref=e16]: Copyright 1986-2026 Ultraleisure Ltd.
+      - paragraph [ref=e18]:
+        - strong [ref=e19]: Applying Vacation-SPF-30..
+        - strong [ref=e20]: 30%
+    - img [ref=e34]
+  - generic:
+    - img "Preload for boot background"

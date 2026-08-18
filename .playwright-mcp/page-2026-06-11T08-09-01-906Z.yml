@@ -1,0 +1,12 @@
+- generic [active]:
+  - generic:
+    - heading "[ GAME CHAT SHOP ]" [level=1]
+    - paragraph: A Game by Chia Amisola
+  - generic "Listen to television" [ref=e1]:
+    - img [ref=e2]
+  - link "INFO.txt" [ref=e3] [cursor=pointer]:
+    - /url: guides/INFO.txt
+  - link "GUIDE.txt" [ref=e4] [cursor=pointer]:
+    - /url: guides/GAMECHATSHOP.txt
+  - generic: Click to begin.
+  - log

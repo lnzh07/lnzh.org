@@ -1,0 +1,173 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - heading "time" [level=1] [ref=e3]
+    - link "← back home" [ref=e4] [cursor=pointer]:
+      - /url: ../
+    - paragraph [ref=e5]: school after school
+    - generic [ref=e7]:
+      - img [ref=e17]
+      - group "≈2012 — hong kong" [ref=e24]:
+        - generic [ref=e26]: "to be hung: hong kong — my cup of tea"
+        - generic [ref=e27]:
+          - generic [ref=e28]: ≈2012
+          - generic [ref=e29]: hong kong
+          - generic [ref=e30]: my cup of tea, and the smithfield road mcdonald’s.
+      - group "≈2017 — palo alto" [ref=e31]:
+        - generic [ref=e33]: "to be hung: palo alto — the baylands"
+        - generic [ref=e34]:
+          - generic [ref=e35]: ≈2017
+          - generic [ref=e36]: palo alto
+          - generic [ref=e37]: the bayland preserve, and the waverley street 7-eleven.
+      - group "≈2020 — the new kid, again" [ref=e38]:
+        - generic [ref=e40]: "to be hung: a small portrait, half turned away"
+        - generic [ref=e41]:
+          - generic [ref=e42]: ≈2020
+          - generic [ref=e43]: the new kid, again
+          - generic [ref=e44]: a rather inconspicuous role, each time.
+          - link "visit →" [ref=e45] [cursor=pointer]:
+            - /url: ../blog/gossip/
+      - group "2024 — arriving at stevenson" [ref=e46]:
+        - generic [ref=e48]: "to be hung: stevenson, the sea fog"
+        - generic [ref=e49]:
+          - generic [ref=e50]: "2024"
+          - generic [ref=e51]: arriving at stevenson
+          - generic [ref=e52]: a boarding school by the sea.
+      - group "2025 — the philosophers" [ref=e53]:
+        - generic [ref=e55]: "to be hung: a shelf of paperback spines"
+        - generic [ref=e56]:
+          - generic [ref=e57]: "2025"
+          - generic [ref=e58]: the philosophers
+          - generic [ref=e59]: camus, schopenhauer, wittgenstein — a shelf.
+          - link "visit →" [ref=e60] [cursor=pointer]:
+            - /url: ../list/
+      - group "2025 — tending the ferments" [ref=e61]:
+        - generic [ref=e63]: "to be hung: a ferment jar, mid-bubble"
+        - generic [ref=e64]:
+          - generic [ref=e65]: "2025"
+          - generic [ref=e66]: tending the ferments
+          - generic [ref=e67]: fermented beans, in any form.
+      - group "2025 — leonzhou7" [ref=e68]:
+        - generic [ref=e70]: "to be hung: a chess position"
+        - generic [ref=e71]:
+          - generic [ref=e72]: "2025"
+          - generic [ref=e73]: leonzhou7
+          - generic [ref=e74]: white to play, somehow worse.
+          - link "visit → ↗" [ref=e75] [cursor=pointer]:
+            - /url: https://www.chess.com/member/leonzhou7
+      - group "2026 — on existence" [ref=e76]:
+        - generic [ref=e78]: "to be hung: an essay page, close up"
+        - generic [ref=e79]:
+          - generic [ref=e80]: "2026"
+          - generic [ref=e81]: on existence
+          - generic [ref=e82]: the first essay. the rest followed.
+          - link "visit →" [ref=e83] [cursor=pointer]:
+            - /url: ../blog/existence/
+      - group "2026 — times i cried with you" [ref=e84]:
+        - generic [ref=e86]: "to be hung: two cups of tea"
+        - generic [ref=e87]:
+          - generic [ref=e88]: "2026"
+          - generic [ref=e89]: times i cried with you
+          - generic [ref=e90]: the tender register.
+          - link "visit →" [ref=e91] [cursor=pointer]:
+            - /url: ../blog/times-i-cried/
+      - group "2026 — my tomato sandwich" [ref=e92]:
+        - generic [ref=e94]: "to be hung: a tomato sandwich"
+        - generic [ref=e95]:
+          - generic [ref=e96]: "2026"
+          - generic [ref=e97]: my tomato sandwich
+          - generic [ref=e98]: a sandwich, unreasonably considered.
+          - link "visit →" [ref=e99] [cursor=pointer]:
+            - /url: ../blog/tomato/
+      - group "2026 — first photographs" [ref=e100]:
+        - generic [ref=e102]: "to be hung: a still photograph"
+        - generic [ref=e103]:
+          - generic [ref=e104]: "2026"
+          - generic [ref=e105]: first photographs
+          - generic [ref=e106]: a newer way of fixing things in place.
+      - group "2026 — graduation" [ref=e107]:
+        - generic [ref=e109]: "to be hung: a cap, thrown"
+        - generic [ref=e110]:
+          - generic [ref=e111]: "2026"
+          - generic [ref=e112]: graduation
+          - generic [ref=e113]: defeated by college applications; graduated anyway.
+      - group "2026 — lnzh.org":
+        - generic:
+          - generic: "to be hung: this site, from outside"
+        - generic:
+          - generic: "2026"
+          - generic: lnzh.org
+          - generic: hand-drawn, square-cornered. a home, not a portfolio.
+          - link "visit →":
+            - /url: ../
+      - group "2026 — the coffee project":
+        - generic:
+          - generic: "to be hung: a latte, mid-pour"
+        - generic:
+          - generic: "2026"
+          - generic: the coffee project
+          - generic: espresso, americano, latte — real orders, no storefront.
+          - link "visit →":
+            - /url: ../coffee/
+      - group "2026 — the writing tool":
+        - generic:
+          - generic: "to be hung: the editor, mid-redaction"
+        - generic:
+          - generic: "2026"
+          - generic: the writing tool
+          - generic: one sentence at a time. no going back.
+          - link "visit →":
+            - /url: ../writing/
+      - group "2026 — the instagram worker":
+        - generic:
+          - generic: "to be hung: a tangle of wires, neatly labeled"
+        - generic:
+          - generic: "2026"
+          - generic: the instagram worker
+          - generic: a little machine that fetches my photographs.
+      - group "2026 — the one-stroke puzzle":
+        - generic:
+          - generic: "to be hung: a constellation, traced"
+        - generic:
+          - generic: "2026"
+          - generic: the one-stroke puzzle
+          - generic: one stroke unlocks the cosmos.
+          - button "play →"
+      - group "2026 — the empty frame":
+        - generic:
+          - generic: "to be hung: whatever happens next"
+        - generic:
+          - generic: "2026"
+          - generic: the empty frame
+          - generic: reserved.
+      - group "someday — chef · philosopher · writer":
+        - generic:
+          - generic: someday
+          - generic: chef · philosopher · writer
+          - generic: still becoming.
+      - group "someday — ai / ml research":
+        - generic:
+          - generic: someday
+          - generic: ai / ml research
+          - generic: a thread, being pulled.
+      - group "someday — getxd.app":
+        - generic:
+          - generic: someday
+          - generic: getxd.app
+          - generic: under construction.
+      - group "someday — (no good at any of the above)":
+        - generic:
+          - generic: someday
+          - generic: (no good at any of the above)
+          - generic: building anyway.
+    - paragraph [ref=e115]: scroll to walk · tab visits each piece
+    - generic [ref=e117] [cursor=pointer]:
+      - paragraph [ref=e118]: time
+      - paragraph [ref=e119]: come in — i hung some things.
+      - paragraph [ref=e120]: scroll, swipe, or arrow your way in
+    - text: ↗
+  - img
+  - button "Appearance settings" [ref=e121] [cursor=pointer]:
+    - generic: ⚙
+  - button "Play the one-stroke puzzle" [ref=e122] [cursor=pointer]:
+    - generic:
+      - img

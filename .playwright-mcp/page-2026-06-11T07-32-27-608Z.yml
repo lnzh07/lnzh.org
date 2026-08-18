@@ -1,0 +1,29 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - generic:
+        - link "Index" [ref=e2] [cursor=pointer]:
+          - /url: /nav.html
+        - link "Forms" [ref=e3] [cursor=pointer]:
+          - /url: /categories.html
+        - link "News" [ref=e4] [cursor=pointer]:
+          - /url: /subnav.html
+      - generic:
+        - link "Info" [ref=e5] [cursor=pointer]:
+          - /url: info.html
+        - link "CV" [ref=e6] [cursor=pointer]:
+          - /url: https://docs.google.com/document/d/1uXsLlktg2mQzkoMI4k6LDZ_R0YsribD8bYJZf_Omybw/preview?tab=t.0#heading=h.ywd9b0u51cmz
+  - iframe [ref=e9]:
+    - main [ref=f2e2]:
+      - paragraph [ref=f2e3]:
+        - text: Chia Amisola is an artist of ambiences and agencies. Their practice spanning hypertexts, games, and performances explores the intimacies of infrastructures and the labor of tools. Their
+        - emphasis [ref=f2e4]: "'internet ambient'"
+        - text: works build dense, durational, hypertextual worlds that entangle Philippine specificity and universal conditions.
+      - link [ref=f2e7] [cursor=pointer]:
+        - /url: /world/himala/index.html
+        - img [ref=f2e8]
+      - generic [ref=f2e9]: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17
+      - link "Himala (Miracle) Performance, net art" [ref=f2e11] [cursor=pointer]:
+        - /url: /world/himala/index.html
+        - generic [ref=f2e12]: Himala (Miracle)
+        - generic [ref=f2e13]: Performance, net art
