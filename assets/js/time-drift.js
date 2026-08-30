@@ -445,7 +445,7 @@
         if (!document.getElementById('nebula-path-js')) {
             var sc = document.createElement('script');
             sc.id = 'nebula-path-js';
-            sc.src = new URL('../assets/js/nebula-path.js', document.baseURI).href;
+            sc.src = new URL('/assets/js/nebula-path.js', document.baseURI).href;
             sc.onload = function () {
                 if (window.NebulaPath && window.NebulaPath.open) { window.NebulaPath.open(); }
             };
