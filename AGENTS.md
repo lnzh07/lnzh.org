@@ -1,47 +1,159 @@
-# Repository Guidelines
+# AGENTS.md: working in this repo
 
-## Project Structure & Module Organization
+This file combines the repository conventions with **how to work with me**: what I care
+about, and how concurrent coding-agent sessions stay out of each other's way and ship here.
 
-This is a static personal site. Top-level folders such as `about/`, `blog/`, `coffee/`, `orders/`, and `thoughts/` each contain an `index.html` page. Shared files live under `assets/`:
+## Repository map and coding conventions
 
-- `assets/css/style.css` contains the global stylesheet.
-- `assets/js/` contains page-specific browser scripts and Firebase helpers.
-- `assets/images/content/`, `assets/images/icons/`, `assets/images/ui/`, and `assets/clipart/` hold referenced image assets.
-- `FIRESTORE_RULES.txt` documents rules for Firebase-backed features.
+This is a static personal site. Top-level folders such as `about/`, `blog/`, `coffee/`,
+`orders/`, and `thoughts/` each contain an `index.html` page. Shared CSS is in
+`assets/css/style.css`; browser scripts and Firebase helpers are in `assets/js/`; image
+assets are organized under `assets/images/` and `assets/clipart/`. `FIRESTORE_RULES.txt`
+documents Firebase-backed features. There is no generated build output or test directory.
 
-There is no generated build output, package manifest, or test directory.
+Use four-space indentation in HTML, CSS, and JavaScript. Prefer plain browser APIs and small
+page-specific scripts over new dependencies. Keep filenames lowercase where practical, and
+do not rename historical assets without updating every reference. Never render user data
+with `innerHTML`; use `textContent`, `append`, and explicit DOM node creation. Keep private
+Firebase credentials, admin passwords, and local configuration out of git. Public Firebase
+client configuration is acceptable only when authorization is enforced by Firestore rules
+or a real backend.
 
-## Build, Test, and Development Commands
+Search every reference before deleting an asset, for example `rg -F "coffee.png" .`. For
+Firebase-backed pages, verify that failures in networking or permissions degrade clearly.
 
-- `./serve` serves the site locally and opens it in the browser (auto-picks a free port starting at 8000). Pass a port (`./serve 3000`) or `--no-open` to skip the browser. Use this instead of opening files directly when testing ES modules. Equivalent to `python3 -m http.server 8000`.
-- `for f in assets/js/*.js; do node --check "$f" || exit 1; done` checks JavaScript syntax without executing browser-only imports.
-- `git status --short` verifies the working tree before and after edits.
+## How to work with me (read first)
 
-For asset cleanup, search before deleting: `rg -F "coffee.png" .`.
+**Default to action: just go.** Be as autonomous as possible: make the call, do the
+work, merge it, tell me after. I'd rather react to real work than approve plans. Everything
+below is context so your own calls land where I'd want them: fuel for judgment, not a
+rulebook. The better you hold this, the fewer rules either of us needs.
 
-## Coding Style & Naming Conventions
+**What this is.** lnzh.org is *my* personal site: my writing and ideas, first. Not a
+portfolio, not for anyone's approval. A home.
 
-Use 4-space indentation in HTML, CSS, and JavaScript. Prefer plain browser APIs and small page-specific scripts over new dependencies. Keep filenames lowercase where possible; do not rename historical assets without updating every reference.
+**The taste is the whole point.** Every visual is hand-made and being hand-redrawn: the
+nav, the 8-bit theme toggle, the bespoke iris transition. The feel is warm, imperfect,
+idiosyncratic, a little playful, unmistakably human. The single failure state is *looks
+like AI made it*: generic components, default type, safe spacing, stock polish. When you
+touch anything visual, extend **this**, in my voice: never homogenize it.
 
-Avoid rendering user data with `innerHTML`. Use `textContent`, `append`, and DOM node creation for order, review, email, and localStorage-derived values.
+**The live site is the source of truth: not this file.** When you're unsure how something
+should look or behave, match what's already shipped and the hand-drawn assets; they're the
+real spec. This doc is the *why*. If they ever disagree, the site wins.
 
-## Testing Guidelines
+**The bar, when I'm not watching:**
 
-There is no automated test suite. Before finishing changes:
+- **Unmistakably mine**: never generic.
+- **Genuinely right**: the craft holds up; considered, not just working.
+- **Creative calls that are *aligned*.** I *want* you making design decisions: the thing I
+  can't stand is one that's misaligned with where I'd have gone. Alignment comes from
+  knowing my taste (this doc + the living site), not from asking permission.
+- **Lean**: does the thing and stops. No bloat, no unrequested features.
+- **No babysitting**: ships clean; I don't tidy up after you.
 
-- Run the JavaScript syntax check above.
-- Serve the site locally and open affected pages.
-- Confirm changed asset paths return `200` and deleted assets are no longer referenced.
-- For Firebase-backed pages, verify the page degrades clearly if network or permissions fail.
+**See the whole board.** Several branches/worktrees are usually live at once. Before
+changing something, know what *else* is touching it; a nav or style edit can collide with
+another branch's in-progress work. Factor the other work in. (Mechanics below.)
 
-## Commit & Pull Request Guidelines
+**One genuine exception to "just go":** if you can't tell *what* I'm asking: which task,
+which direction: ask. For *how* to execute a clear ask, don't check in: just nail it.
 
-Recent commits use short, imperative summaries, for example `Fix latte caramel workflow`. Keep commits focused and describe the behavioral change.
+**Hold onto decisions.** When we settle a preference or direction, keep it (here or in
+memory) so I never have to say it twice.
 
-Do not commit directly to `main`. Use one branch per task, preferably named like `codex/short-task-name`, and keep each branch limited to the requested change. Avoid unrelated edits.
+## Isolation: one worktree per session
 
-Pull requests should include a brief summary, affected pages, verification commands, and screenshots for visual changes. Note any Firebase rule or console changes that must be applied outside the repository.
+`main` auto-deploys to **lnzh.org**, and several agents may run at once against the
+same clone. A `git checkout` in any session moves **every** session's working tree,
+and uncommitted edits bleed across branches. So:
 
-## Security & Configuration Tips
+- **Never edit the shared/primary checkout** (`/Users/lnzh/Documents/lnzh`). Give each
+  session its own worktree:
 
-Do not commit private Firebase credentials, admin passwords, or local config files. Public Firebase client config is acceptable, but authorization must come from Firestore rules or a real backend, not client-side passwords. Keep ignored local files such as `assets/js/firebase-config.local.js` out of HTML unless the file is deployed intentionally.
+  ```bash
+  dir=$(scripts/worktree-up.sh feat/my-thing) && cd "$dir"
+  ```
+
+  Worktrees are created off **`origin/main`** (local `main` goes stale: always
+  fetch first; `worktree-up.sh` does). They live as siblings: `../lnzh-<name>`.
+- Never run a tree-moving git op (`checkout` / `switch` / `reset` / `stash` /
+  `clean` / `rebase`) in a tree that holds changes you didn't author. Stop and ask.
+
+### Working across branches
+
+Several worktrees run at once. **Commit your own scoped work promptly, in small commits on
+your own branch: don't wait to be asked;** uncommitted work is what another session
+clobbers. Never commit a mixed tree or another session's files, never `git add -A` / `.`
+blindly (stage what *you* authored), and before any commit confirm `git branch
+--show-current` and that `git status` shows only your files. The per-page nav,
+`assets/css/style.css`, and the theme JS are what branches collide on: check what else is
+in flight and pick a merge order.
+
+## Shipping
+
+**Verify before shipping** (no test suite: these are the checks):
+
+```bash
+for f in assets/js/*.js; do node --check "$f" || exit 1; done   # JS syntax
+./serve --no-open                                               # serve, then:
+node dev/verify-matrix.mjs                                      # the matrix gate (below, automated)
+```
+
+`dev/verify-matrix.mjs` (one-time setup: `cd dev && npm install`) loads every page in
+**both themes** in real Chrome and fails on console errors, 4xx/5xx requests, relative
+`--*-src` values, and any computed background/mask/`--*-src` URL that doesn't fetch 200.
+It also runs a **Lighthouse accessibility audit** (contrast, focus, labels) per
+page × theme (`--no-lighthouse` for a quick loop; `--base`/`--pages` to point it
+elsewhere). The `playwright` / `chrome-devtools` MCPs are the interactive complement
+when you need to poke at a page by hand.
+
+For anything touching the **nav, a shared component, or an asset reference**, eyeballing
+one page is NOT enough: verify the **page-depth × theme matrix**, because the nav is
+copied into every page and each page sits at a different path depth:
+
+- **Depth:** check the homepage (`/`, depth 0) **and** a deep page (e.g. `/blog/tomato/`,
+  depth 2). A path that resolves at one depth can 404 at another.
+- **Theme:** check **light and dark** (assets swap by theme).
+- **Confirm the asset actually loads (HTTP 200)**: not just that the element exists. A
+  `background-image` / `--*-src` 404 paints nothing and logs no error, so it looks fine
+  in the DOM while being invisible. `verify-matrix.mjs` sweeps the computed styles for
+  exactly this; trust its red over a clean-looking DOM.
+
+> Why this matrix exists: we shipped it wrong once: an invisible nav star that 404'd on
+> every page except depth-2 ones, in both themes. It was verified only on a deep page, so
+> the homepage break went live. The tell-tale "works at depth 2, breaks elsewhere" is the
+> signature of the gotcha below.
+
+### Merge straight to main: no PR
+
+Finished, verified work goes **directly to `main`**: no PR, no waiting for review. This
+push is allowlisted (`Bash(git push origin HEAD:main)` in `.claude/settings.json`), so it
+goes straight through: **don't fall back to opening a PR.** From your worktree branch:
+
+```bash
+git push origin HEAD:main      # main auto-deploys to lnzh.org; no PR ceremony
+# then, from the primary checkout, tidy up:
+git worktree remove ../lnzh-<name> && git branch -D <branch>
+```
+
+If the push is rejected because `main` moved, rebase your branch on the new `origin/main`
+and push again. Always **report what you merged** afterward: the commit + what changed.
+
+The one judgment call left to you: **don't push half-finished work to the live site.** If
+something genuinely isn't ready, leave it on its branch and tell me: that's about
+readiness, not permission.
+
+## Gotchas that have bitten us: don't repeat
+
+- **`--*-src` custom properties must hold ABSOLUTE URLs.** A relative `url()` inside a CSS
+  custom property (`--star-src`, `--frame-src`, `--slot-src`, …) resolves against the
+  **stylesheet** that consumes it (`/assets/css/`), **not** the page: so a page-relative
+  value becomes `/assets/css/assets/...` and 404s on every depth but the stylesheet's. When
+  setting one in JS, resolve first: `new URL(src, document.baseURI).href`. (This is what
+  made the nav star invisible; fixed in #28.)
+- **Themed non-`<img>` elements need an explicit dark swap.** `theme-toggle.js`'s
+  `swapImages()` only walks `<img>`. An asset painted via a `--*-src` property on a
+  `<span>`/`<div>` keeps its light asset in dark mode (→ invisible on a dark background)
+  unless you add it to `swapImages()`. Whenever you convert an `<img>` into a non-`<img>`,
+  re-check the dark swap.
